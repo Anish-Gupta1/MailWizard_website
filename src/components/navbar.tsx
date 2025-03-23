@@ -60,27 +60,27 @@ export default function Navbar() {
         <div className="md:hidden bg-white border-t">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
             <Link
-              href="/docs"
+              href="/document"
               className="text-gray-700 hover:text-purple-700 transition-colors py-2"
               onClick={toggleMenu}
             >
               Docs
             </Link>
             <Link
-              href="#tutorial"
+              href="/#tutorial"
               className="text-gray-700 hover:text-purple-700 transition-colors py-2"
               onClick={toggleMenu}
             >
               Tutorial
             </Link>
             <Link
-              href="#feedback"
+              href="/#feedback"
               className="text-gray-700 hover:text-purple-700 transition-colors py-2"
               onClick={toggleMenu}
             >
               Feedback
             </Link>
-            <Button className="bg-purple-600 hover:bg-purple-700 w-full">Install Extension</Button>
+            <Button onClick={redirectToExtension} className="bg-purple-600 hover:bg-purple-700 w-full">Install Extension</Button>
           </div>
         </div>
       )}
