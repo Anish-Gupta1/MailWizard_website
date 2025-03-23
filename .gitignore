@@ -10,6 +10,8 @@
 !.yarn/releases
 !.yarn/versions
 
+# Unignore only the .prisma folder inside node_modules
+!node_modules/.prisma/
 # testing
 /coverage
 
