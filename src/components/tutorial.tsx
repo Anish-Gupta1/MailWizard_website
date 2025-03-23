@@ -50,7 +50,7 @@ export default function Tutorial({ id }: TutorialProps) {
           <div className="relative pb-[56.25%] h-0">
             <iframe
               className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/IjeHfRIgQKw"
               title="MailWizard Tutorial"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

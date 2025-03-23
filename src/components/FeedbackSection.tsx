@@ -52,7 +52,7 @@ export default function FeedbackSection() {
 
         {!session ? (
           <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-            <h2 className="text-xl font-semibold mb-4">Sign in to Leave Feedback</h2>
+            <h2 className="text-xl text-gray-800 font-semibold mb-4">Sign in to Leave Feedback</h2>
             <p className="text-gray-600 mb-6">
               Please sign in with your Google account to share your thoughts.
             </p>

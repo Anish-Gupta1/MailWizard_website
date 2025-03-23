@@ -40,10 +40,10 @@ export default function Navbar() {
           <Link href="/document" className="text-gray-700 hover:text-purple-700 transition-colors">
             Docs
           </Link>
-          <Link href="#tutorial" className="text-gray-700 hover:text-purple-700 transition-colors">
+          <Link href="/#tutorial" className="text-gray-700 hover:text-purple-700 transition-colors">
             Tutorial
           </Link>
-          <Link href="#feedback" className="text-gray-700 hover:text-purple-700 transition-colors">
+          <Link href="/#feedback" className="text-gray-700 hover:text-purple-700 transition-colors">
             Feedback
           </Link>
           <Button onClick={redirectToExtension} className="bg-purple-600 hover:bg-purple-700">Install Extension</Button>
