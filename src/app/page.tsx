@@ -6,8 +6,11 @@ import Feedback from "@/components/feedback"
 import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "MailWizard - Email Automation Chrome Extension",
+  title: "MailWizard",
   description: "Automate your email workflows with MailWizard Chrome extension",
+  icons: {
+    icon: "favicon.ico",
+  },
 }
 
 export default function Home() {

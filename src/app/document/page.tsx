@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Navbar from "@/components/navbar";
 
 
 const DocsPage: React.FC = () => {
@@ -14,57 +15,7 @@ const DocsPage: React.FC = () => {
         />
       </Head>
 
-      {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <div className="flex items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 text-purple-600"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-            <span className="ml-2 text-xl font-bold text-purple-600">
-              MailWizard
-            </span>
-          </div>
-          <nav className="flex space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-purple-600">
-              Home
-            </Link>
-            <Link href="/docs" className="text-purple-600 font-medium">
-              Docs
-            </Link>
-            <Link
-              href="/#tutorial"
-              className="text-gray-700 hover:text-purple-600"
-              scroll={false}
-            >
-              Tutorial
-            </Link>
-            <Link
-              href="/#feedback"
-              className="text-gray-700 hover:text-purple-600"
-              scroll={false}
-            >
-              Feedback
-            </Link>
-          </nav>
-          <a
-            href="/install"
-            className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md text-sm font-medium"
-          >
-            Install Extension
-          </a>
-        </div>
-      </header>
+      <Navbar/>
 
       {/* Main content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
