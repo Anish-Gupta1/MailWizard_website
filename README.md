@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MailWizard Website
 
-## Getting Started
+The **MailWizard Website** is the official landing page for the **MailWizard Chrome Extension**. It provides essential details about the extension, including documentation, tutorials, and user feedback. This project is built using **Next.js**, **TypeScript**, and **Tailwind CSS**, with a backend powered by **Next.js API routes** and authentication handled via **NextAuth**. User feedback is stored in a **PostgreSQL database**.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🌐 Main Website
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- A modern, sleek landing page for the MailWizard Chrome Extension.
+- Animated, scroll-triggered design with a purplish theme inspired by mailing aesthetics.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 📄 Documentation Page
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Provides detailed instructions on installing, setting up, and using the extension.
+- Includes API setup and configuration details.
 
-## Learn More
+### 🎥 Tutorial Section
 
-To learn more about Next.js, take a look at the following resources:
+- Embedded YouTube video tutorial explaining how to use MailWizard.
+- Easily accessible for first-time users.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### ⭐ Feedback System
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Users can submit feedback that gets stored in a **PostgreSQL database**.
+- Feedback is dynamically displayed on the main page.
 
-## Deploy on Vercel
+### 🔐 Authentication (NextAuth)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Secure user authentication using **NextAuth.js**.
+- Supports multiple authentication providers.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### ⚡ Backend API (Next.js API Routes)
+
+- Handles feedback submission and retrieval.
+- Ensures seamless integration between the frontend and the database.
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js, TypeScript, Tailwind CSS
+- **Backend:** Next.js API Routes
+- **Database:** PostgreSQL
+- **Authentication:** NextAuth.js
+- **Hosting:** Vercel
+
+## 📦 Installation & Setup
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-username/mailwizard-website.git
+   cd mailwizard-website
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Set up environment variables:**
+   Create a `.env.local` file and add the necessary variables:
+   ```sh
+   NEXTAUTH_URL=http://localhost:3000
+   DATABASE_URL=your_postgresql_database_url
+   NEXTAUTH_SECRET=your_secret_key
+   ```
+4. **Run the development server:**
+   ```sh
+   npm run dev
+   ```
+   The website will be available at `http://localhost:3000`.
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
