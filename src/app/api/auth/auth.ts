@@ -1,10 +1,22 @@
-
-import { NextAuthOptions } from "next-auth";
+// src/app/api/auth/auth.ts
+import  { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import { PrismaClient } from "@prisma/client";
 import type { Session } from "next-auth";
 import type { AdapterUser } from "next-auth/adapters";
+
+// Extend the session type
+declare module "next-auth" {
+  interface Session {
+    user: {
+      id: string;
+      name?: string | null;
+      email?: string | null;
+      image?: string | null;
+    }
+  }
+}
 
 const prisma = new PrismaClient();
 
@@ -21,7 +33,7 @@ export const authOptions: NextAuthOptions = {
       session,
       user,
     }: {
-      session: Session & { user?: { id?: string } };
+      session: Session;
       user: AdapterUser;
     }) => {
       if (session?.user) {
