@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Twitter, Github, Linkedin } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -61,7 +61,7 @@ export default function Footer() {
           <div className="col-span-1">
             <h3 className="font-semibold text-lg mb-4">Work With Me</h3>
             <p className="text-purple-200 mb-4">
-              Interested in working together? I'd love to hear from you!
+              Interested in working together? I&apos;d love to hear from you!
             </p>
             <Link
               href="mailto:anish.16.02.06@gmail.com"

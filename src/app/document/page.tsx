@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 import Navbar from "@/components/navbar";
 
-
 const DocsPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -14,7 +13,7 @@ const DocsPage: React.FC = () => {
         />
       </Head>
 
-      <Navbar/>
+      <Navbar />
 
       {/* Main content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -51,11 +50,12 @@ const DocsPage: React.FC = () => {
                       </code>
                     </li>
                     <li>
-                      Enable "Developer mode" using the toggle in the top-right
-                      corner
+                      Enable &quot;Developer mode&quot; using the toggle in the
+                      top-right corner
                     </li>
                     <li>
-                      Click "Load unpacked" and select the extracted folder
+                      Click &quot;Load unpacked&quot; and select the extracted
+                      folder
                     </li>
                     <li>
                       The MailWizard icon should now appear in your Chrome
@@ -74,10 +74,10 @@ const DocsPage: React.FC = () => {
                     <li>Click on the MailWizard icon in your Chrome toolbar</li>
                     <li>Paste your API key in the field</li>
                     <li>
-                      The extension will automatically detect if it's an
+                      The extension will automatically detect if it&apos;s an
                       Anthropic or OpenAI API key
                     </li>
-                    <li>Click "Submit" to complete setup</li>
+                    <li>Click &quot;Submit&quot; to complete setup</li>
                   </ol>
                 </div>
               </div>
@@ -95,7 +95,7 @@ const DocsPage: React.FC = () => {
                     To generate an email using MailWizard:
                   </p>
                   <ol className="list-decimal pl-5 mt-2 text-gray-700">
-                    <li>Open Gmail and click "Compose" to start a new email</li>
+                    <li>Open Gmail and click &quot;Compose&quot; to start a new email</li>
                     <li>
                       Click the MailWizard icon that appears in the compose
                       window
@@ -104,11 +104,11 @@ const DocsPage: React.FC = () => {
                       Enter a prompt describing the email you want to write
                     </li>
                     <li>
-                      Example: "Write a polite follow-up email to a client who
-                      hasn't responded in two weeks"
+                      Example: &quot;Write a polite follow-up email to a client who
+                      hasn&apos;t responded in two weeks&quot;
                     </li>
                     <li>
-                      Click "Generate" and wait for the AI to create your email
+                      Click &quot;Generate&quot; and wait for the AI to create your email
                     </li>
                     <li>
                       The generated email will appear directly in your compose
