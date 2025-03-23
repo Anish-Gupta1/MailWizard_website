@@ -4,13 +4,13 @@
 /node_modules
 /.pnp
 .pnp.*
+/node_modules/.prisma/client
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
 
-# Unignore only the .prisma folder inside node_modules
 # testing
 /coverage
 
